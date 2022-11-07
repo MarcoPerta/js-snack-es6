@@ -7,17 +7,23 @@
 // esempio: dati i valori min: 2 e come max: 4 i nomi nell'array nuovo saranno i nomi compresi tra queste posizioni 2 e 4
 
 const myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
-const newArray = [];
+// const newArray = [];
 const min = 1;
 const max = 4;
 
-myArray.forEach((element,index) =>{
+// myArray.forEach((element,index) =>{
+//     if (index>=min && index<=max ){
+//         newArray.push(element);
+// }});
+
+// console.log(newArray);
+
+const nomi = myArray.filter((element,index) => {
     if (index>=min && index<=max ){
-        newArray.push(element);
-}})
-
-console.log(newArray)
-
+        return true;
+}
+});
+console.log(nomi)
 
 
 
