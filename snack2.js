@@ -39,7 +39,7 @@ let students = [
            return true
         }
       })
-      console.log(studentsUp70);
+      console.log(votes);
 
 
      // uso filter per estrapolare studenti voto maggiore di 70 e id maggiore di 120, poi pusho dentro nuovo array.
