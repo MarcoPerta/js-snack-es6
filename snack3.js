@@ -17,9 +17,12 @@ const bici = [
     }
   ]
 
-let oggettoMinore = bici[0];
+let oggettoMinore = bici[0]; 
+// elemento di comparazione per il ciclo for, prende il primo oggetto dell'array
+
 
 for (x=0; x< bici.length; x++){
+    // faccio comparazione tra la mia variabile e ogni oggetto del ciclo 
     if(bici[x].peso < oggettoMinore.peso){
         oggettoMinore = bici[x];
     }
