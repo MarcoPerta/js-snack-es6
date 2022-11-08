@@ -32,19 +32,18 @@ let students = [
       console.log( nameBig )   
       
     // uso filter per estrapolare studenti voto maggiore di 70, poi pusho dentro nuovo array.
-      let studentsUp70 = [];
+    
       const votes = students.filter( (element) => {
         const grades = element.grades;
         if(grades > 70){
            return true
         }
       })
-      studentsUp70.push(votes);
       console.log(studentsUp70);
 
 
      // uso filter per estrapolare studenti voto maggiore di 70 e id maggiore di 120, poi pusho dentro nuovo array.
-      let studentsUp70eId120 = [];
+
       const votesId = students.filter( (element) => {
         const grades = element.grades;
         const id = element.id;
@@ -52,5 +51,4 @@ let students = [
            return true
         }
       })
-      studentsUp70eId120.push(votesId);
-      console.log(studentsUp70eId120);
+      console.log(votesId);
