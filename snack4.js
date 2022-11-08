@@ -4,32 +4,32 @@
 const squadreCalcio = [
     {
         nome: 'Juventus',
-        puntiFatti: 0,
-        falliSubiti: 0,
+        puntiFatti ,
+        falliSubiti ,
     },
     {
         nome: 'Milan',
-        puntiFatti: 0,
-        falliSubiti: 0,
+        puntiFatti ,
+        falliSubiti ,
     },
     {
         nome: 'Inter',
-        puntiFatti: 0,
-        falliSubiti: 0,
+        puntiFatti ,
+        falliSubiti ,
     },
     {
         nome: 'Napoli',
-        puntiFatti: 0,
-        falliSubiti: 0,
+        puntiFatti ,
+        falliSubiti ,
     }
 ]
 
 let random = Math.floor(Math.random() * 100) + 1;
 console.log(random);
-// squadreCalcio.forEach((puntiFatti,falliSubiti) => {
-//     Math.floor(Math.random() * 100) + 1;
-// })
-const {puntiFatti,falliSubiti} = random;
+squadreCalcio.forEach((puntiFatti,falliSubiti) => {
+    puntiFatti = random;
+    falliSubiti = random;
+})
 console.log(puntiFatti,falliSubiti)
 
 
