@@ -4,32 +4,51 @@
 const squadreCalcio = [
     {
         nome: 'Juventus',
-        puntiFatti ,
-        falliSubiti ,
+        puntiFatti: '',
+        falliSubiti: '',
     },
     {
         nome: 'Milan',
-        puntiFatti ,
-        falliSubiti ,
+        puntiFatti: '',
+        falliSubiti: '',
     },
     {
         nome: 'Inter',
-        puntiFatti ,
-        falliSubiti ,
+        puntiFatti: '',
+        falliSubiti: '',
     },
     {
         nome: 'Napoli',
-        puntiFatti ,
-        falliSubiti ,
+        puntiFatti: '',
+        falliSubiti:'' ,
     }
 ]
+console.log(squadreCalcio)
 
-let random = Math.floor(Math.random() * 100) + 1;
-console.log(random);
-squadreCalcio.forEach((puntiFatti,falliSubiti) => {
-    puntiFatti = random;
-    falliSubiti = random;
-})
-console.log(puntiFatti,falliSubiti)
+// squadreCalcio.forEach((puntiFatti,falliSubiti) => {
+//     puntiFatti = random;
+//     falliSubiti = random;
+// })
+// console.log(puntiFatti,falliSubiti)
+
+for(x=0; x<squadreCalcio.length ; x++){
+    
+    let random = parseInt( Math.floor(Math.random() * 100) + 1);
+    let random2 = parseInt( Math.floor(Math.random() * 100) + 1);
+    squadreCalcio[x].puntiFatti= random;
+    squadreCalcio[x].falliSubiti= random2;
+    console.log(random);
+    console.log(random2);
+}
 
 
+
+// for(x=0; x<squadreCalcio.length ; x++){
+    
+//     const random = squadreCalcio.puntiFatti.push(parseInt( Math.floor(Math.random() * 100) + 1));
+//     console.log(random);
+//     squadreCalcio.puntiFatti= random;
+//     // console.log(random);
+// }
+
+// console.log(puntiFatti)
