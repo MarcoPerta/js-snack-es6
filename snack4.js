@@ -25,21 +25,42 @@ const squadreCalcio = [
 ]
 console.log(squadreCalcio)
 
+function getRandom(min,max){
+    return Math.floor(Math.random()* (max-min +1)+ min);
+}
+
+const squadreCalcioCopia = squadreCalcio.map(({nome,falliSubiti}) =>{
+    
+    falliSubiti = getRandom(1,100);
+    return {nome,falliSubiti}
+
+})
+console.log(squadreCalcioCopia)
+
+
+
+
+
+
+
+
+
+
 // squadreCalcio.forEach((puntiFatti,falliSubiti) => {
 //     puntiFatti = random;
 //     falliSubiti = random;
 // })
 // console.log(puntiFatti,falliSubiti)
 
-for(x=0; x<squadreCalcio.length ; x++){
+// for(x=0; x<squadreCalcio.length ; x++){
     
-    let random = parseInt( Math.floor(Math.random() * 100) + 1);
-    let random2 = parseInt( Math.floor(Math.random() * 100) + 1);
-    squadreCalcio[x].puntiFatti= random;
-    squadreCalcio[x].falliSubiti= random2;
-    console.log(random);
-    console.log(random2);
-}
+//     let random = parseInt( Math.floor(Math.random() * 100) + 1);
+//     let random2 = parseInt( Math.floor(Math.random() * 100) + 1);
+//     squadreCalcio[x].puntiFatti= random;
+//     squadreCalcio[x].falliSubiti= random2;
+//     console.log(random);
+//     console.log(random2);
+// }
 
 
 
